@@ -18,7 +18,7 @@ playing: bool = True
 chr_exists: bool = False
 # for counting the alternate indices
 alt_idx = 0
-#beginning of while statement loop 
+# beginning of while statement loop 
 while playing:
     # test to see if the indexes are the same length
     if len(guess) != len(SECRET):
@@ -27,7 +27,7 @@ while playing:
     # while loop for when index lengths are equal
     else:
         while idx < len(SECRET):
-        # test for if character indices match in the same spot
+            # test for if character indices match in the same spot
             if guess[idx] == SECRET[idx]:
                 resulting_emoji += GREEN_BOX
             # for if they are not equal or do not match the spot in the index
