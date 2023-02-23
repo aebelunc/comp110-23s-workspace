@@ -6,9 +6,6 @@ SECRET: str = "python"
 # Input for game start
 guess: str = input(f"What is your {len(SECRET)}-letter guess? ")
 # Variables for colored boxes
-WHITE_BOX: str = "\U00002B1C"
-GREEN_BOX: str = "\U0001F7E9"
-YELLOW_BOX: str = "\U0001F7E8"
 resulting_emoji = ""
 # index set to 0 for counting
 idx = 0
