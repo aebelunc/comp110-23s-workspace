@@ -25,6 +25,7 @@ def main() -> None:
     # for when the guesses is up and you lose the game.
     if turn > 6:
         print("x/6 - Sorry, try again tomorrow!")
+        return False
 # def for checking for indexes of the guessed word for matches.
 def contains_char(str_search: str, onechar_search: str, ) -> bool:
     """Tests to see if string two's character is in the first string."""
