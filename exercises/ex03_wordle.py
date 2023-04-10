@@ -18,14 +18,12 @@ def main() -> None:
         guess_emoji = emojified(guess, SECRET)
         print(guess_emoji)
         if guess == SECRET:
-            print(f"You won in {turn} turns!")
-            return False
+            print(f"You won in {turn}/6 turns!")
+            return
         # adding one to the turn after each loop.
         turn += 1
     # for when the guesses is up and you lose the game.
-    if turn > 6:
-        print("x/6 - Sorry, try again tomorrow!")
-        return False
+    print("x/6 - Sorry, try again tomorrow!")
 # def for checking for indexes of the guessed word for matches.
 def contains_char(str_search: str, onechar_search: str, ) -> bool:
     """Tests to see if string two's character is in the first string."""
